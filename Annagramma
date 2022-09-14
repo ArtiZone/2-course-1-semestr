@@ -1,0 +1,49 @@
+
+
+
+
+using System;
+using System.Collections.Generic;
+
+namespace OOP
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string s = Console.ReadLine();
+            string s1 = Console.ReadLine();
+            var delete = new string[] { " " };
+            foreach (var c in delete)
+            {
+                s = s.Replace(c, string.Empty);
+                s1 = s1.Replace(c, string.Empty);
+                s = s.ToUpper();
+                s1 = s1.ToUpper();
+
+            }
+
+            for(int i = 0; i < s.Length; i++) {
+                for(int j = 0; j < s1.Length; j++)
+                {
+                    if(s[i] == s1[j])
+                    {
+                        s1 = s1.Remove(j);
+                    }
+                }
+            }
+            if(s1.Length == 0)
+            {
+                Console.WriteLine("yes");
+            }
+            else
+            {
+                Console.WriteLine("no");
+            }
+            
+            //A   rte  
+            //T   a r
+
+        }
+    }
+}
