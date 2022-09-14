@@ -1,7 +1,3 @@
-
-
-
-
 using System;
 using System.Collections.Generic;
 
@@ -28,7 +24,7 @@ namespace OOP
                 {
                     if(s[i] == s1[j])
                     {
-                        s1 = s1.Remove(j);
+                        s1 = s1.Remove(j, 1);
                     }
                 }
             }
@@ -41,6 +37,8 @@ namespace OOP
                 Console.WriteLine("no");
             }
             
+            //Adb ce
+            //Abc ef
             //A   rte  
             //T   a r
 
